@@ -23,4 +23,17 @@ and he did not remember the order of the participants and the place when it was 
 He only remembered that the number of meters he threw the dookie ended with number 5,
 one of the first three winning contestants took his turn right before Vasiliy,
 and the participant that took his turn right after Vasiliy, could not throw further than him.
-What is the highest place Vasiliy could have gotten in that competition?  
+What is the highest place Vasiliy could have gotten in that competition? 
+
+TASK 6
+For a given vector, determine if it is symmetrical. 
+If not, output the least number of elements needed to be added 
+in the back to make it symmetrical and what are these elements.
+
+TASK 9
+You need to put out a MINESWEEPER game field. You are given 3 numbers:
+the number of rows, the number of columns and the number of mines on a field.
+if the number of mines is not 0, you are also given the coordinates of each mine on the field.
+You should only output a field for the game of the given configuration.
+
+-----THE VALUES ARE GIVEN IN THE RIGHT WAY, YOU DO NOT NEED TO PROOF CHECK VALUES!!!-----
