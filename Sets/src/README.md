@@ -23,6 +23,9 @@ ascending numbers of the remaining colors for Anya, then the number and
 ascending numbers of the remaining colors for Borya.
 
 TASK 4
+Given a text file, count unique words in it. A word is defined by a sequence of non-space symbols.
+Words are separated by a single or several space symbols. Words that are located in the end of a "sentence"
+or near the punctuation signs, should be read without the punctuation sign (.,;:!?\|/'"")
 
 TASK 5
 
