@@ -28,6 +28,24 @@ Words are separated by a single or several space symbols. Words that are located
 or near the punctuation signs, should be read without the punctuation sign (.,;:!?\|/'"")
 
 TASK 5
+Give 3 digits (0 <= each number <= 9) and number n (0 <= n <= 10000),
+determine the number of digits that need to be added to the first three input digits
+to be able to output (replicate) number n.
+
+Example 1:
+INPUT:
+    1 2 3
+    1223
+OUTPUT:
+    0 (as one can create number 1223 with 1, 2 and 3)
+
+
+Example 2:
+INPUT:
+    1 4 0 
+    1223
+OUTPUT:
+    2 (as digits 2 and 3 need to be present in the digits set to be able to output 1223)
 
 TASK 6
 
