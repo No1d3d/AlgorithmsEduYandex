@@ -48,6 +48,21 @@ OUTPUT:
     2 (as digits 2 and 3 need to be present in the digits set to be able to output 1223)
 
 TASK 6
+Given two strings consisting of only CAPITAL ENGLISH LETTERS, determine the number of pairs (with duplicates) from string 2 that can be found in string 1.
+
+Example:
+    ABBACAB
+    BCABB
+
+Output: 4
+
+pairs in string 1: AB BB BA AC CA AB
+pairs in string 2: BC CA AB BB
+
+    picking out pairs from s2, we can see that there is no BC in s1, one CA in s1, two AB in s1, one BB in s1.
+    0 + 1 + 2 + 1 = 4;
+
+pairs of 
 
 TASK 7
 
