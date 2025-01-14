@@ -1,10 +1,6 @@
-TASK 1
-For a given list of integer numbers (0 <= size <= 100000), determine the number of unique numbers in it 
-
-TASK 2
-For two given list of integer numbers (0 <= size of list 1 or list 2 <= 10000), determine the intersecting (similar) elements in them and put them out in the ascending order.
-
+/*
 TASK 3
+
 Anya and Borya love to play multi-colored cubes, and each of them has its own set, and in
 each set all the cubes are different in color. One day, the children wondered how much
 There are colors such that cubes of each color are present in both sets. To do this,
@@ -21,17 +17,44 @@ Print first the number and then the ascending numbers of colors such
 that cubes of each color are in both sets, then the number and
 ascending numbers of the remaining colors for Anya, then the number and
 ascending numbers of the remaining colors for Borya.
+*/
 
-TASK 4
+#include <set>
+#include <iostream>
+#include <algorithm>
 
-TASK 5
+void CubesOfChildren(std::set<int>& s1, std::set<int>& s2) {
+    std::set<int> res;
+    std::set_intersection(s1.begin(), s1.end(), s2.begin(), s2.end(), inserter(res, res.begin()));
+    std::cout << res.size() << "\n";
+    for (int i : res) {
+        std::cout << i << " ";
+        s1.erase(i);
+        s2.erase(i);
+    }
+    std::cout << "\n" << s1.size() << "\n";
+    for (int i : s1) {
+        std::cout << i << " ";
+    }
+    std::cout << "\n" << s2.size() << "\n";
+    for (int i : s2) {
+        std::cout << i << " ";
+    }
+}
 
-TASK 6
+int main() {
+    std::set<int> set_a;
+    std::set<int> set_b;
+    int n, m, k;
+    std::cin >> n >> m;
+    for (int i = 0; i < n; i++) {
+        std::cin >> k;
+        set_a.insert(k);
+    }
+    for (int i = 0; i < m; i++) {
+        std::cin >> k;
+        set_b.insert(k);
+    }
+    CubesOfChildren(set_a, set_b);
 
-TASK 7
-
-TASK 8
-
-TASK 9
-
-TASK 10
+}
